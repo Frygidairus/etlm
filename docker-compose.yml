@@ -14,6 +14,18 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
 
+  jupyter:
+    image: jupyter/base-notebook:latest
+    container_name: jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    environment:
+      JUPYTER_ENABLE_LAB: "no"
+    depends_on:
+      - mysql
+
 volumes:
   mysql_data:
     driver: local
