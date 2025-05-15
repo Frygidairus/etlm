@@ -21,6 +21,7 @@ services:
       - "8888:8888"
     volumes:
       - ./notebooks:/home/jovyan/work
+      - ./notebooks/jupyter_notebook_config.py:/home/jovyan/.jupyter/jupyter_notebook_config.py
     environment:
       JUPYTER_ENABLE_LAB: "no"
     depends_on:
