@@ -1,0 +1,167 @@
+{
+    "title": "referentiel-des-lignes",
+    "type": "object",
+    "oneOf": [
+        {
+            "$ref": "#/definitions/referentiel-des-lignes"
+        }
+    ],
+    "definitions": {
+        "referentiel-des-lignes": {
+            "properties": {
+                "records": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/referentiel-des-lignes_records"
+                    }
+                }
+            }
+        },
+        "referentiel-des-lignes_records": {
+            "properties": {
+                "fields": {
+                    "type": "object",
+                    "properties": {
+                        "ID_Line": {
+                            "type": "string",
+                            "description": "Trade line reference identifier",
+                            "title": "ID_Line"
+                        },
+                        "Name_Line": {
+                            "type": "string",
+                            "description": "Line trade name",
+                            "title": "Name_Line"
+                        },
+                        "ShortName_Line": {
+                            "type": "string",
+                            "description": "Abbreviated trade name of Lines",
+                            "title": "ShortName_Line"
+                        },
+                        "TransportMode": {
+                            "type": "string",
+                            "description": "Line mode",
+                            "title": "TransportMode"
+                        },
+                        "TransportSubmode": {
+                            "type": "string",
+                            "description": "Line sub-mode",
+                            "title": "TransportSubmode"
+                        },
+                        "Type": {
+                            "type": "string",
+                            "description": "Type",
+                            "title": "Type"
+                        },
+                        "OperatorRef": {
+                            "type": "string",
+                            "description": "Main carrier code",
+                            "title": "OperatorRef"
+                        },
+                        "OperatorName": {
+                            "type": "string",
+                            "description": "Main carrier name (operator)",
+                            "title": "OperatorName"
+                        },
+                        "AdditionalOperatorsRef": {
+                            "type": "string",
+                            "description": "Secondary operators",
+                            "title": "AdditionalOperatorsRef"
+                        },
+                        "NetworkName": {
+                            "type": "string",
+                            "description": "Sales network name",
+                            "title": "NetworkName"
+                        },
+                        "ColourWeb_hexa": {
+                            "type": "string",
+                            "description": "Line color in hexadecimal format",
+                            "title": "ColourWeb_hexa"
+                        },
+                        "TextColourWeb_hexa": {
+                            "type": "string",
+                            "description": "Text color in hexadecimal format",
+                            "title": "TextColourWeb_hexa"
+                        },
+                        "ColourPrint_CMJN": {
+                            "type": "string",
+                            "description": "Line color in CMYK format",
+                            "title": "ColourPrint_CMJN"
+                        },
+                        "TextColourPrint_hexa": {
+                            "type": "string",
+                            "description": "Text color in hexadecimal format",
+                            "title": "TextColourPrint_hexa"
+                        },
+                        "Accessibility": {
+                            "type": "string",
+                            "description": "General line accessibility.",
+                            "title": "Accessibility"
+                        },
+                        "Audiblesigns_Available": {
+                            "type": "string",
+                            "description": "Dynamic on-board information systems",
+                            "title": "Audiblesigns_Available"
+                        },
+                        "Visualsigns_Available": {
+                            "type": "string",
+                            "description": "On-board audio information systems",
+                            "title": "Visualsigns_Available"
+                        },
+                        "ID_GroupOfLines": {
+                            "type": "string",
+                            "description": "Line administrative code",
+                            "title": "ID_GroupOfLines"
+                        },
+                        "ShortName_GroupOfLines": {
+                            "type": "string",
+                            "description": "Short name of the administrative line",
+                            "title": "ShortName_GroupOfLines"
+                        },
+                        "Notice_Title": {
+                            "type": "string",
+                            "description": "Notice title",
+                            "title": "Notice_Title"
+                        },
+                        "Notice_Text": {
+                            "type": "string",
+                            "description": "Text of the leaflet",
+                            "title": "Notice_Text"
+                        },
+                        "Picto": {
+                            "type": "string",
+                            "description": "Link to the line pictogram",
+                            "title": "Picto"
+                        },
+                        "Valid_fromDate": {
+                            "format": "date",
+                            "type": "string",
+                            "description": "Business start date",
+                            "title": "Valid_fromDate"
+                        },
+                        "Valid_toDate": {
+                            "format": "date",
+                            "type": "string",
+                            "description": "End date of activity",
+                            "title": "Valid_toDate"
+                        },
+                        "Status": {
+                            "type": "string",
+                            "description": "Line status",
+                            "title": "Status"
+                        },
+                        "PrivateCode": {
+                            "type": "string",
+                            "description": "Private line code",
+                            "title": "PrivateCode"
+                        },
+                        "Air_Conditioning": {
+                            "type": "string",
+                            "description": "Air conditioning system",
+                            "title": "Air_Conditioning"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
